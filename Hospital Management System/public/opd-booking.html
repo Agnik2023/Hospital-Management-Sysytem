@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPD Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Enter Patient ABHA ID</h2>
+        <input type="text" id="abha-id" placeholder="Enter ABHA ID">
+        <button onclick="fetchPatientDetails()">Fetch Details</button>
+
+        <div id="patient-info" class="panel"></div>
+
+        <button id="book-doctor" style="display:none;" onclick="showDoctorOptions()">Book Doctor</button>
+
+        <div id="doctor-options" class="panel" style="display:none;"></div>
+    </div>
+
+    <script src="opd-booking.js"></script>
+</body>
+</html>
